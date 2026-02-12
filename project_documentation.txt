@@ -1,0 +1,48 @@
+Kerala Healthcare Resource Optimization Project
+
+1. Problem Definition
+The objective of this project is to optimize healthcare resource allocation across Kerala districts using machine learning and linear programming techniques.
+
+2. Data Collection
+Data was collected from official Government of Kerala healthcare infrastructure reports (2023–24). District-level data for beds, ICU units, ventilators, ambulances, doctors, nurses, IP and OP demand were extracted from PDF reports and converted into structured CSV format.
+
+3. Data Cleaning
+Missing values were handled, district names standardized, and datasets merged into a single processed dataset named kerala_healthcare_infrastructure_2023_24.csv.
+
+4. Feature Engineering
+The following indices were created:
+- Bed Stress Index
+- ICU Stress Index
+- Ventilator Stress Index
+- Doctor Load
+- Nurse Load
+- Ambulance Risk Index
+- Demand Risk Index (Composite metric)
+
+5. Exploratory Analysis
+District-level comparisons and heatmaps were generated to identify high-risk regions.
+
+6. Machine Learning Models
+The following models were trained and evaluated:
+- Linear Regression
+- Ridge Regression
+- Gradient Boosting
+- Extra Trees
+- Random Forest
+
+Evaluation Metrics:
+- MAE
+- RMSE
+- R² Score
+
+7. Model Selection
+Ridge Regression was selected as the best performing model due to lowest RMSE and highest R² score, along with stable generalization.
+
+8. Stress Testing
+Demand surge scenarios from 1.0x to 2.0x were simulated. System failure increases significantly beyond 1.6x surge multiplier.
+
+9. Optimization
+Linear Programming was used to minimize unmet demand under healthcare resource constraints.
+
+10. Conclusion
+The project demonstrates that structured predictive modeling combined with optimization techniques can significantly improve healthcare resource planning and emergency preparedness at district level.
